@@ -17,6 +17,10 @@ Possibilitando uma forma diferente de lidar com conjuntos de elementos.</p>
 <h3>📌Filter</h3>
 <p>Filtra os elementos de acordo com uma condição retornando uma nova stream.</p>
 <li><a href="https://github.com/tiagolopesdev/estudandoJava/blob/master/src/streams/Filter.java">Código aqui.</a></li>
+  
+<h3>📌Map</h3>
+<p>Retorna uma stream consistindo no resultado da aplicação de uma função de mapeamento nos elementos da stream.</p>
+<li><a href="https://github.com/tiagolopesdev/estudandoJava/blob/master/src/streams/Map.java">Código aqui.</a></li>
 
 <h3>📌Diferentes usos de foreach, iterator e stream</h3>
 <p>Stream mostra-se a forma mais inchuta de código.</p>
@@ -29,6 +33,10 @@ Possibilitando uma forma diferente de lidar com conjuntos de elementos.</p>
   <li><a href="https://github.com/tiagolopesdev/estudandoJava/blob/master/src/streams/ReduceOne.java">Acumulando valores do tipo Integer</a></li>
   <li><a href="https://github.com/tiagolopesdev/estudandoJava/blob/master/src/streams/ReduceThree.java">Acumulando valores de objeto e transformando em numbers</a></li>
 </ul>
+
+<h3>📌Math</h3>
+<p>Realiza uma operação com retorno booleano. Funcões usando allMatch, anyMatch e noneMatch<</p>
+<li><a href="https://github.com/tiagolopesdev/estudandoJava/blob/master/src/streams/Match.java">Código aqui</a></li>
 
 <h2>☕Seção 3: Generics</h2> 
 <h4>⏳Status: A fazer</h4>
