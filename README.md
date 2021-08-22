@@ -7,9 +7,35 @@
 <h4>⏳Status: A fazer</h4>
 <p>Um conceito adicionado ao Java 8, e que tem como principal objetivo adicionar ao Java técnicas de linguagens funcionais, como LISP. Sua 
 vantagem é diminuir a quantidade de código necessária para a escrita de algumas funções</p>
-<a href="LinkAqui">Link do projeto</a>
 
-<h2>☕Seção 2: Stream API</h2> 
+<h3>📌Interface Consumer</h3>
+<p>Uma operação que aceita um único argumento de entrada e não retorna nenhum resultado, operando por meio de 
+  efeitos colaterais.</p>
+<li><a href="https://github.com/tiagolopesdev/estudandoJava/blob/master/src/Lambdas/Consumidor.java">Código 
+  aqui.</a></li>
+
+<h3>📌Interface BinaryOperator</h3>
+<p>Representa uma operação sobre dois operandos do mesmo tipo, produzindo um resultado do mesmo tipo que os 
+  operandos.</p>
+<li><a href="https://github.com/tiagolopesdev/estudandoJava/blob/master/src/Lambdas/OperadorBinario.java">Código 
+  aqui.</a></li>
+
+<h3>📌Interface UnaryOperator</h3>
+<p>Uma operação com um único operando, produzindo um resultado do mesmo tipo de seu operando.</p>
+<li><a href="https://github.com/tiagolopesdev/estudandoJava/blob/master/src/Lambdas/OperadorUnario.java">Código 
+  aqui.</a></li>
+
+<h3>📌Interface Predicate</h3>
+<p>Representa um predicado (função com valor booleano) de um argumento.</p>
+<li><a href="https://github.com/tiagolopesdev/estudandoJava/blob/master/src/Lambdas/PredicadoComposicao.java">Código 
+  aqui.</a></li>
+
+<h3>📌Interface Function</h3>
+<p>Representa uma função que aceita um argumento e produz um resultado.</p>
+<li><a href="https://github.com/tiagolopesdev/estudandoJava/blob/master/src/Lambdas/Funcao.java">Código 
+  aqui.</a></li>
+
+<h2>☕Seção 2: Stream API</h2>
 <h3>⏳Status: A fazer</h3>
 <p>A Streams API faz a manipulação, combinada com as expressões lambda, de coleções em Java seguindo os princípios da programação funcional. 
 Possibilitando uma forma diferente de lidar com conjuntos de elementos.</p>
