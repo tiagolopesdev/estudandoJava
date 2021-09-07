@@ -88,8 +88,7 @@ Possibilitando uma forma diferente de lidar com conjuntos de elementos.</p>
 <li><a href="https://github.com/tiagolopesdev/estudandoJava/blob/master/src/Generics/ParesTeste.java">
   Teste do código</a></li>
 
-  
-<h2>Seção 4: Banco de dados</h2> 
+<h2>Seção 4: Java Persistence API (JPA)</h2> 
 <h4>Status: A fazer</h4>
 <a href="LinkAqui">Link do projeto</a>
 
