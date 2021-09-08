@@ -90,6 +90,9 @@ Possibilitando uma forma diferente de lidar com conjuntos de elementos.</p>
 
 <h2>Seção 4: Java Persistence API (JPA)</h2> 
 <h4>Status: A fazer</h4>
+<p>É uma especificação oficial que descreve como deve ser o comportamento dos 
+frameworks de persistência Java que desejarem implementá-la. A implementação 
+usada nesse projeto é o Hibernate da Red Hat.</p>
 <a href="LinkAqui">Link do projeto</a>
 
 <h2>Seção 5: Spring Boot</h2> 
