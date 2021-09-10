@@ -93,6 +93,11 @@ Possibilitando uma forma diferente de lidar com conjuntos de elementos.</p>
 <p>É uma especificação oficial que descreve como deve ser o comportamento dos 
 frameworks de persistência Java que desejarem implementá-la. A implementação 
 usada nesse projeto é o Hibernate da Red Hat.</p>
+<h3>Persistindo Objetos</h3>
+<h3>Buscando objetos pelo identificador</h3>
+<h3>Listando objetos</h3>
+<h3>Atualizando objetos</h3>
+<h3>Excluindo objetos</h3>
 <a href="LinkAqui">Link do projeto</a>
 
 <h2>Seção 5: Spring Boot</h2> 
