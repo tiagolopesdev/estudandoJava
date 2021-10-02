@@ -93,11 +93,24 @@ Possibilitando uma forma diferente de lidar com conjuntos de elementos.</p>
 <p>É uma especificação oficial que descreve como deve ser o comportamento dos 
 frameworks de persistência Java que desejarem implementá-la. A implementação 
 usada nesse projeto é o Hibernate da Red Hat.</p>
-<h3>Persistindo Objetos</h3>
-<h3>Buscando objetos pelo identificador</h3>
-<h3>Listando objetos</h3>
-<h3>Atualizando objetos</h3>
-<h3>Excluindo objetos</h3>
+<h5>Primeiros passos</h5>
+  <ul>
+    <li>Persistindo Objetos</li>
+      <p>Chegou a hora de persistir objetos, ou seja, inserir registros no banco 
+        de dados. O código abaixo deve inserir um novo veículo na tabela do banco 
+        de dados.
+      </p>
+        <!-- Adicionar imagem da inserção de veiculos em seguida do DAO-->
+      <p> O Hibernate gerou o SQL de inserção. Instanciamos um novo produto e 
+        atribuímos alguns valores, chamando os métodos setters. Executamos o método persist, passando a instância do veículo como parâmetro. Isso fará com que 
+        o JPA insira o objeto no banco de dados. Agora fazemos commit da transação,
+        para efetivar a inserção do veículo no banco de dados.
+      </p>
+    <li>Buscando objetos pelo identificador</li>
+    <li>Listando objetos</li>
+    <li>Atualizando objetos</li>
+    <li>Excluindo objetos</li>
+  </ul>
 <a href="LinkAqui">Link do projeto</a>
 
 <h2>Seção 5: Spring Boot</h2> 
