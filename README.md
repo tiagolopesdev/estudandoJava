@@ -93,23 +93,23 @@ Possibilitando uma forma diferente de lidar com conjuntos de elementos.</p>
 <p>É uma especificação oficial que descreve como deve ser o comportamento dos 
 frameworks de persistência Java que desejarem implementá-la. A implementação 
 usada nesse projeto é o Hibernate da Red Hat.</p>
-<h5>Primeiros passos</h5>
+<h3>Primeiros passos</h3>
   <ul>
-    <li>Persistindo Objetos</li>
-      <p>Chegou a hora de persistir objetos, ou seja, inserir registros no banco 
-        de dados. O código abaixo deve inserir um novo veículo na tabela do banco 
-        de dados.
+    <li><h4>Persistindo Objetos</h4></li>
+      <p>Inserir registros no banco de dados. O código abaixo deve inserir um novo produto na 
+        tabela do banco de dados.
       </p>
-        <!-- Adicionar imagem da inserção de veiculos em seguida do DAO-->
+      <img src="https://user-images.githubusercontent.com/58925056/135734317-dae31550-fe5a-4319-966c-d06dfd78a512.png" width=700px>
+      <a href="https://github.com/tiagolopesdev/JPA/blob/master/src/infra/DAO.java">Codigo de abertura, inserção de dados e fechamento de transação</a>
       <p> O Hibernate gerou o SQL de inserção. Instanciamos um novo produto e 
-        atribuímos alguns valores, chamando os métodos setters. Executamos o método persist, passando a instância do veículo como parâmetro. Isso fará com que 
-        o JPA insira o objeto no banco de dados. Agora fazemos commit da transação,
-        para efetivar a inserção do veículo no banco de dados.
+        atribuímos alguns valores, atráves do construtor. Executamos o método persist (Metedo contido dentro da classe DAO), passando as instâncias dos
+        produtos como parâmetro. Isso fará com que o JPA insira o objeto no banco de dados. Em seguida, faz-se o commit da transação,
+        para efetivar a inserção do produto no banco de dados.
       </p>
-    <li>Buscando objetos pelo identificador</li>
-    <li>Listando objetos</li>
-    <li>Atualizando objetos</li>
-    <li>Excluindo objetos</li>
+    <li><h4>Buscando objetos pelo identificador</h4></li>
+    <li><h4>Listando objetos</h4></li>
+    <li><h4>Atualizando objetos</h4></li>
+    <li><h4>Excluindo objetos</h4></li>
   </ul>
 <a href="LinkAqui">Link do projeto</a>
 
