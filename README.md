@@ -106,6 +106,7 @@ usada nesse projeto é o Hibernate da Red Hat.</p>
         produtos como parâmetro. Isso fará com que o JPA insira o objeto no banco de dados. Em seguida, faz-se o commit da transação,
         para efetivar a inserção do produto no banco de dados.
       </p>
+      <a href="https://github.com/tiagolopesdev/JPA/blob/master/src/teste/basicoUser/NovoUsuario.java">Código aqui</a>
     <li><h4>Buscando objetos pelo identificador</h4></li>
       <p>Através do identificador (chave primária) da entidade, pode-se recuperar objetos.
         O código abaixo busca um usuário com o código igual a 2.
@@ -118,6 +119,7 @@ usada nesse projeto é o Hibernate da Red Hat.</p>
         do usuario. O SQL gerado possui a cláusula where, para filtrar apenas o produto de
         código igual a 2.
 </p>
+    <a href="https://github.com/tiagolopesdev/JPA/blob/master/src/teste/basicoUser/ObterUsuario.java">Código aqui</a>
 </p>
     <li><h4>Listando objetos</h4></li>
       <p>Consultas simples de entidade são feitas com a linguagem JPQL(uma extensão de SQL), porém com a caracteristica 
@@ -129,8 +131,7 @@ usada nesse projeto é o Hibernate da Red Hat.</p>
       <p>Com os registros obtidos, foi usado a stream() para filtrar o atributo getPreco() do objeto para depois somar 
         o total de getPreco(). Em seguida, com Comparator<> foi feita a comparação de preços para retornar o 
         menor preço.</p>
-      <a href="https://github.com/tiagolopesdev/JPA/blob/master/src/teste/basicoProduct/getAll.java">Link da classe 
-        de teste</a>
+      <a href="https://github.com/tiagolopesdev/JPA/blob/master/src/teste/basicoUser/ObterUsuarios.java">Código aqui</a>
     <li><h4>Atualizando objetos</h4></li>
       <p>Os atributos de entidades podem ser manipulados diretamente ou através dos métodos da classe e todas as 
         alterações serão detectadas e persistidas automaticamente, quando o contexto de persistência for “descarregado”
@@ -140,16 +141,18 @@ usada nesse projeto é o Hibernate da Red Hat.</p>
       <p>Não é preciso chamar nenhum método para a atulização no banco de dados. A alteração foi identificada automaticamente
         e refletida no banco de dados, atráves do comando SQL update</p>
          <img src="https://user-images.githubusercontent.com/58925056/138904068-8766d241-93ad-4722-b4c4-90f0702d4c93.png"
-           width=600px>
+           width=600px></img>
+      <a href="https://github.com/tiagolopesdev/JPA/blob/master/src/teste/basicoUser/UpdateUserOne.java">Código aqui</a>
     <li><h4>Excluindo objetos</h4></li>
       <p>A exclusão de objetos é feita chamando o método remove de EntityManager(método contido dentro da classe DAO), passando
         como parâmetro o objeto da entidade e a chave primaria.</p>
           <img src="https://user-images.githubusercontent.com/58925056/138904485-4dffe9c9-ee91-4afd-b5e5-5aab6b7e4ca0.png"
            width=600px>
           <img src="https://user-images.githubusercontent.com/58925056/138904285-9bf41160-2220-4e87-8f28-d237f5a84d08.png"
-           width=600px>
+           width=600px></img>
+      <a href="https://github.com/tiagolopesdev/JPA/blob/master/src/teste/basicoUser/RemoveUser.java">Código aqui</a>
   </ul>
-<a href="LinkAqui">Link do projeto</a>
+<a href="https://github.com/tiagolopesdev/JPA/tree/master/src/teste/basicoUser">Codigos básicos CRUD</a>
 
 <h2>Seção 5: Spring Boot</h2> 
 <h4>Status: A fazer</h4>
