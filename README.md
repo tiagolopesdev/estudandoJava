@@ -102,7 +102,7 @@ usada nesse projeto é o Hibernate da Red Hat.</p>
       <img src="https://user-images.githubusercontent.com/58925056/135734317-dae31550-fe5a-4319-966c-d06dfd78a512.png" width=700px>
       <p>O Hibernate gerou o SQL de inserção. Instanciamos um novo produto e atribuímos alguns valores, atráves do construtor.</p>
       <img src="https://user-images.githubusercontent.com/58925056/135901846-e332cc42-a93e-4ca7-8b47-58a11f6e0885.png" width=600px>
-      <p>Executamos o método persist (Metedo contido dentro da classe DAO), passando as instâncias dos
+      <p>Executamos o método persist (Metodo contido dentro da classe DAO), passando as instâncias dos
         produtos como parâmetro. Isso fará com que o JPA insira o objeto no banco de dados. Em seguida, faz-se o commit da transação,
         para efetivar a inserção do produto no banco de dados.
       </p>
@@ -110,7 +110,8 @@ usada nesse projeto é o Hibernate da Red Hat.</p>
       <p>Através do identificador (chave primária) da entidade, pode-se recuperar objetos.
         O código abaixo busca um usuário com o código igual a 2.
       </p>
-    <!--     Adicionar imagem do codigo-->
+      <img src="https://user-images.githubusercontent.com/58925056/138903141-23d33b3a-cfd2-40e2-bcd6-3eaf960a537f.png"
+           width=600px>
       <img src="https://user-images.githubusercontent.com/58925056/135902001-e0af3fac-50f5-425f-93de-033e55d1ee74.png">
       <p>A consulta foi feita atráves do método getOneId, contido dentro da classe DAO, que contém o
         método find, de EntityManager, que usa os argumentos do tipo da entidade e também o código
@@ -123,7 +124,8 @@ usada nesse projeto é o Hibernate da Red Hat.</p>
         da orientação a objetos. Com ela não referenciamos tabelas do banco de dados, mas sim as entidades do modelo. 
         O método setFirstResult(), limita a quantidade de resgistro na consulta. Já o método setFirstResult() pula os 
         registros de acordo com a quantidade passada no parametro. Confira o código.</p>
-<!--       Imagem do codigo de busca, da classe DAO -->
+        <img src="https://user-images.githubusercontent.com/58925056/138904698-5411367e-369f-48b9-9362-9bac1c75de7d.png"
+           width=600px>
       <p>Com os registros obtidos, foi usado a stream() para filtrar o atributo getPreco() do objeto para depois somar 
         o total de getPreco(). Em seguida, com Comparator<> foi feita a comparação de preços para retornar o 
         menor preço.</p>
@@ -133,14 +135,19 @@ usada nesse projeto é o Hibernate da Red Hat.</p>
       <p>Os atributos de entidades podem ser manipulados diretamente ou através dos métodos da classe e todas as 
         alterações serão detectadas e persistidas automaticamente, quando o contexto de persistência for “descarregado”
         para o banco de dados.</p>
-<!--       Imagem da classe de teste de atualização -->
+         <img src="https://user-images.githubusercontent.com/58925056/138903765-26949b00-f274-4bf1-a965-5fb9bfcef709.png"
+           width=600px>
       <p>Não é preciso chamar nenhum método para a atulização no banco de dados. A alteração foi identificada automaticamente
         e refletida no banco de dados, atráves do comando SQL update</p>
-<!--        Imagem da DAO, o metodo que faz a atualização -->
+         <img src="https://user-images.githubusercontent.com/58925056/138904068-8766d241-93ad-4722-b4c4-90f0702d4c93.png"
+           width=600px>
     <li><h4>Excluindo objetos</h4></li>
       <p>A exclusão de objetos é feita chamando o método remove de EntityManager(método contido dentro da classe DAO), passando
         como parâmetro o objeto da entidade e a chave primaria.</p>
-<!--       Imagem da classe de teste e da classe DAO -->
+          <img src="https://user-images.githubusercontent.com/58925056/138904485-4dffe9c9-ee91-4afd-b5e5-5aab6b7e4ca0.png"
+           width=600px>
+          <img src="https://user-images.githubusercontent.com/58925056/138904285-9bf41160-2220-4e87-8f28-d237f5a84d08.png"
+           width=600px>
   </ul>
 <a href="LinkAqui">Link do projeto</a>
 
