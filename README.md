@@ -132,17 +132,23 @@
     <ul>
       <li>Tabela única para todas as classes (single table)
 </li>
-      <p> 
+      <p>Esse tipo de herança é o padrão, ou seja, não precisaríamos anotar a classe com @Inheritance. A anotação @DiscriminatorColumn foi usada para informar o nome de coluna de controle para discriminar de qual classe é o registro. As subclasses foram anotadas com @DiscriminatorValue para definir o valor discriminador de cada tipo. Nesse tipo de herança é gerado somente uma tabela que armazena todos as subclasses.
       </p>
       <img src="">
       <a href="">Código aqui</a>
       <li>Uma tabela para cada classe da hierarquia (joined)
 </li>
-      <p></p>
+      <p>Nas classes filhas, podemos adicionar a anotação
+      @PrimaryKeyJoinColumn para informar o nome da coluna que faz referência à tabela pai. Se o nome dessa coluna for igual ao
+      nome da coluna da tabela pai, essa anotação não precisa ser utilizada. Esse tipo de mapeamento criará 3 tabelas.
+      </p>
       <img src="">
       <a href="">Código aqui</a>
       <li>Uma tabela para cada classe concreta (table per class)</li>
-      <p></p>
+      <p>Cada tabela deve possuir todas as colunas, incluindo as da
+      superclasse. Como também, deve-se mudar a estratégia de geração de identificadores “increment”, que a implementação do Hibernate disponibiliza (não é padronizada pelo JPA). Não podemos usar a geração automática de chaves nativa do banco de dados.
+      Também não precisamos mais da anotação @PrimaryKeyJoinColumn.
+      </p>
       <img src="">
       <a href="">Código aqui</a>
     </ul>
