@@ -128,6 +128,24 @@
       <img src="https://user-images.githubusercontent.com/58925056/138904285-9bf41160-2220-4e87-8f28-d237f5a84d08.png" width=600px></img>
       <a href="https://github.com/tiagolopesdev/JPA/blob/master/src/teste/basicoUser/RemoveUser.java">Código aqui</a>
     </ul>
+    <h3>Herança</h3>
+    <ul>
+      <li>Tabela única para todas as classes (single table)
+</li>
+      <p> 
+      </p>
+      <img src="">
+      <a href="">Código aqui</a>
+      <li>Uma tabela para cada classe da hierarquia (joined)
+</li>
+      <p></p>
+      <img src="">
+      <a href="">Código aqui</a>
+      <li>Uma tabela para cada classe concreta (table per class)</li>
+      <p></p>
+      <img src="">
+      <a href="">Código aqui</a>
+    </ul>
     <a href="https://github.com/tiagolopesdev/JPA/tree/master/src/teste/basicoUser">Codigos básicos CRUD</a>
   </div>
 </details>
