@@ -119,40 +119,39 @@
       para o banco de dados.</p>
       <img src="https://user-images.githubusercontent.com/58925056/138903765-26949b00-f274-4bf1-a965-5fb9bfcef709.png" width=600px>
       <p>Não é preciso chamar nenhum método para a atulização no banco de dados. A alteração foi identificada automaticamente e refletida no banco de dados, atráves do comando SQL update</p>
-      <img src="https://user-images.githubusercontent.com/58925056/138904068-8766d241-93ad-4722-b4c4-90f0702d4c93.png" width=600px></img>
+      <img src="https://user-images.githubusercontent.com/58925056/138904068-8766d241-93ad-4722-b4c4-90f0702d4c93.png" width=600px><br>
       <a href="https://github.com/tiagolopesdev/JPA/blob/master/src/teste/basicoUser/UpdateUserOne.java">Código aqui</a>
       <li><h4>Excluindo objetos</h4></li>
       <p>A exclusão de objetos é feita chamando o método remove de EntityManager(método contido dentro da classe DAO), passando
       como parâmetro o objeto da entidade e a chave primaria.</p>
       <img src="https://user-images.githubusercontent.com/58925056/138904485-4dffe9c9-ee91-4afd-b5e5-5aab6b7e4ca0.png" width=600px>
-      <img src="https://user-images.githubusercontent.com/58925056/138904285-9bf41160-2220-4e87-8f28-d237f5a84d08.png" width=600px></img>
+      <img src="https://user-images.githubusercontent.com/58925056/138904285-9bf41160-2220-4e87-8f28-d237f5a84d08.png" width=600px></img><br>
       <a href="https://github.com/tiagolopesdev/JPA/blob/master/src/teste/basicoUser/RemoveUser.java">Código aqui</a>
     </ul>
     <h3>Herança</h3>
     <ul>
       <li>Tabela única para todas as classes (single table)
 </li>
-      <p>Esse tipo de herança é o padrão, ou seja, não precisaríamos anotar a classe com @Inheritance. A anotação @DiscriminatorColumn foi usada para informar o nome de coluna de controle para discriminar de qual classe é o registro. As subclasses foram anotadas com @DiscriminatorValue para definir o valor discriminador de cada tipo. Nesse tipo de herança é gerado somente uma tabela que armazena todos as subclasses.
+      <p>Esse tipo de herança é o padrão, ou seja, não precisaríamos anotar a classe com @Inheritance. A anotação @DiscriminatorColumn foi usada para informar o nome de coluna de controle para discriminar de qual classe é o registro. As subclasses (Esportivo e popular) foram anotadas com @DiscriminatorValue para definir o valor discriminador de cada tipo. Nesse tipo de herança é gerado somente uma tabela que armazena todos as subclasses.
       </p>
-      <img src="">
-      <a href="">Código aqui</a>
+      <img src="https://user-images.githubusercontent.com/58925056/142004281-19bba562-c7b1-4a11-9cb3-6abef75c694a.png"><br>
+      <a href="https://github.com/tiagolopesdev/JPA/tree/master/src/modelo/heranca/single_table">Código aqui</a><br>
       <li>Uma tabela para cada classe da hierarquia (joined)
 </li>
       <p>Nas classes filhas, podemos adicionar a anotação
-      @PrimaryKeyJoinColumn para informar o nome da coluna que faz referência à tabela pai. Se o nome dessa coluna for igual ao
-      nome da coluna da tabela pai, essa anotação não precisa ser utilizada. Esse tipo de mapeamento criará 3 tabelas.
+      @PrimaryKeyJoinColumn para informar o nome da coluna que faz referência à <a href="https://github.com/tiagolopesdev/JPA/blob/master/src/modelo/heranca/joined/Funcionario.java">tabela pai</a>. Se o nome dessa coluna for igual ao nome da coluna da tabela pai, essa anotação não precisa ser utilizada. Esse tipo de mapeamento criará 3 tabelas.
       </p>
-      <img src="">
-      <a href="">Código aqui</a>
+      <img src="https://user-images.githubusercontent.com/58925056/142005014-deadb71a-84a1-48cf-8423-3764036c7bde.png"><br>
+      <a href="https://github.com/tiagolopesdev/JPA/tree/master/src/modelo/heranca/joined">Código aqui</a><br>
       <li>Uma tabela para cada classe concreta (table per class)</li>
       <p>Cada tabela deve possuir todas as colunas, incluindo as da
       superclasse. Como também, deve-se mudar a estratégia de geração de identificadores “increment”, que a implementação do Hibernate disponibiliza (não é padronizada pelo JPA). Não podemos usar a geração automática de chaves nativa do banco de dados.
       Também não precisamos mais da anotação @PrimaryKeyJoinColumn.
       </p>
-      <img src="">
-      <a href="">Código aqui</a>
+      <img src="https://user-images.githubusercontent.com/58925056/142005245-f694affb-ac0c-4fad-98cb-d903baee5a65.png"><br>
+      <a href="https://github.com/tiagolopesdev/JPA/tree/master/src/modelo/heranca/table_per_class">Código aqui</a><br>
     </ul>
-    <a href="https://github.com/tiagolopesdev/JPA/tree/master/src/teste/basicoUser">Codigos básicos CRUD</a>
+    <a href="https://github.com/tiagolopesdev/JPA/tree/master/src/modelo/heranca">Todos os codigos de herança</a>
   </div>
 </details>
 
