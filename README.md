@@ -5,7 +5,9 @@
 <details>
   <summary><span>Seção 1: lambdas</span></summary>
     <div>
-      <h4>Status: Concluído</h4>
+    <br>
+  
+  ![AppVeyor](https://img.shields.io/badge/Status-Concluído-green)
       <p>Um conceito adicionado ao Java 8, e que tem como principal objetivo adicionar ao Java técnicas de linguagens funcionais, como LISP. Sua 
       vantagem é diminuir a quantidade de código necessária para a escrita de algumas funções</p>
       <h3>Interface Consumer</h3>
@@ -36,7 +38,9 @@
 <details>
   <summary><span>Seção 2: Stream API</span></summary>
   <div>
-    <h3>Status: Concluído</h3>
+  <br>
+  
+  ![AppVeyor](https://img.shields.io/badge/Status-Concluído-green)
     <p>A Streams API faz a manipulação, combinada com as expressões lambda, de coleções em Java seguindo os princípios da programação funcional. 
     Possibilitando uma forma diferente de lidar com conjuntos de elementos.</p>
     <h3>Filter</h3>
@@ -64,7 +68,9 @@
 <details>
   <summary><span>Seção 3: Generics</span></summary>
   <div>
-    <h4>Status: Concluido</h4>
+  <br>
+  
+  ![AppVeyor](https://img.shields.io/badge/Status-Concluído-green)
     <h3>Generics Integer</h3>
     <li><a href="https://github.com/tiagolopesdev/estudandoJava/blob/master/src/Generics/Caixa.java">Classe 
       génerica</a></li>
@@ -87,8 +93,10 @@
 
 <details>
   <summary><span>Seção 4: Java Persistence API (JPA)</span></summary>
-  <div>
-    <h4>Status: A fazer</h4>
+  <div> 
+  <br>
+
+  ![AppVeyor](https://img.shields.io/badge/Status-Concluído-green)
     <p>É uma especificação oficial que descreve como deve ser o comportamento dos 
     frameworks de persistência Java que desejarem implementá-la. A implementação 
     usada nesse projeto é o Hibernate da Red Hat.</p>
@@ -158,7 +166,9 @@
 <details>
   <summary><span>Seção 5: Spring Boot</span></summary>
   <div>
-    <h4>Status: A fazer</h4>
+  <br>
+  
+  ![AppVeyor](https://img.shields.io/badge/Status-A%20fazer-red) 
     <a href="LinkAqui">Link do projeto</a>
   </div>
 </details>
@@ -166,7 +176,9 @@
 <details>
   <summary><span>Seção 6: Microservices</span></summary>
   <div>
-    <h4>Status: A fazer</h4>
+  <br>
+  
+  ![AppVeyor](https://img.shields.io/badge/Status-A%20fazer-red)
     <a href="LinkAqui">Link do projeto</a>
   </div>
 </details>
