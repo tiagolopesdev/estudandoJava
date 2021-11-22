@@ -169,6 +169,53 @@
   <br>
   
   ![AppVeyor](https://img.shields.io/badge/Status-A%20fazer-red) 
+  # Padrão MVC (Model, view, controller) & Spring Boot
+
+## Visão Geral
+
+  ### Model
+  
+  - Regras de negócio
+  - Entidades
+  - Camada de acesso à dados.
+    
+  ### View
+    
+  - Responsável por renderizar a página como resposta a requisição
+  - Trabalha com:
+    - Javascript
+    - CSS
+    - HTML
+    
+  ### Controller
+    
+  - Faz o controle entre model e view
+  - É a camada que recebe a requisição
+
+## Fluxo sem acesso à dados
+
+  - Não há necessidade de passar pela camada ***Model*** (camada que se liga ao banco de dados).
+  - Nesse cenario um **browser gera uma requisição ao web server** que passa para aplicação em questão e **acessa o controller**. Em seguida, é encaminhado a **requisição para a view**, sendo essa responsável por **encaminhar a resposta ao browser**.
+
+## Fluxo com acesso à dados
+
+  - Passa pela camada ***Model*.**
+  - Nesse cenário o browser **enviar uma requisição,** ao qual necessita de dados do banco de dados, para à aplicação. Para isso, **o controller envia uma requisição ao model** que acessa o banco de dados e obtém o que foi solicitado na requisição e **retorna ao controller**. Em seguida, o **controller encaminha a view**, responsável por renderizar os dados, que **manda as resposta ao browser.**
+
+## Camadas do fluxo de dados
+
+  - Browser
+  - Web server
+  - Aplicação
+  - Controller
+
+## Com Spring
+  
+  ![Fonte: Produtividade no desenvolvimento de aplicações web com Spring Boot. AlgaWorks, ed. 3º](https://user-images.githubusercontent.com/58925056/142873292-41ecbf70-0ca4-4885-aa1d-01d6e31c0ef9.png)
+    
+  Fonte: Produtividade no desenvolvimento de aplicações web com Spring Boot. AlgaWorks, ed. 3º
+    
+  - A requisição HTTP enviada ao servidor que roda a aplicação *web*, no caso do *Spring Boot* o servidor *Tomcat*. Em seguida a requisição é passada ao *front controller (DispatcherServlet)* que a partir da URL identifica o a classe responsável por tratar essa requisição, entregando a ela os dados enviados pelo *browser*. Se houver acessa ou não aos dados todo esse processo (Realizar cálculos, validações e executar regras de negócios) é realizado pelo *Model*. O resultado das operações são entregues ao *Controller* que passa a *View* renderizando a pagina em HTML que é apresentado ao *browser*.
     <a href="LinkAqui">Link do projeto</a>
   </div>
 </details>
