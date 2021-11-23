@@ -216,6 +216,10 @@
   Fonte: Produtividade no desenvolvimento de aplicações web com Spring Boot. AlgaWorks, ed. 3º
     
   - A requisição HTTP enviada ao servidor que roda a aplicação *web*, no caso do *Spring Boot* o servidor *Tomcat*. Em seguida a requisição é passada ao *front controller (DispatcherServlet)* que a partir da URL identifica o a classe responsável por tratar essa requisição, entregando a ela os dados enviados pelo *browser*. Se houver acessa ou não aos dados todo esse processo (Realizar cálculos, validações e executar regras de negócios) é realizado pelo *Model*. O resultado das operações são entregues ao *Controller* que passa a *View* renderizando a pagina em HTML que é apresentado ao *browser*.
+
+  # Injeção de dependência (Dependency Injection - DI)
+
+  ### No contexto do Spring Framework
     <a href="LinkAqui">Link do projeto</a>
   </div>
 </details>
