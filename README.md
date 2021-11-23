@@ -223,8 +223,13 @@
   ### No contexto do Spring Framework
 
   - A Injeção de Dependência **define quais classes serão instanciadas e em quais lugares** serão injetadas **quando houver necessidade**. Assim, basta que a classe A crie um ponto de injeção da classe B, pelo construtor por exemplo, e quando houver a necessidade **o container do Spring Framework irá criar uma instância da classe** B para que a classe A possa utilizar o método b.metodoB(), como mostra na imagem abaixo.
+
+  ![Fonte: Spring Boot Da API REST aos Microservices - Michelli Brito](https://user-images.githubusercontent.com/58925056/143074225-f8536226-b0dc-4778-b64f-fc1c7f168ba2.png)
+
   - A classe *ProductController* é gerenciada pelo Spring por conta da anotação *@RestController*. Dessa forma, ao ler a anotação *@Autowired* o Spring Framework injeta uma instância da interface *ProductRepository* na propriedade *productRepository*.
-    <a href="LinkAqui">Link do projeto</a>
+
+  ![Fonte: Autoria própria](https://user-images.githubusercontent.com/58925056/143074328-3f36f49f-7fa3-4336-8340-2e3cbd4378c7.png)  
+  <a href="LinkAqui">Link do projeto</a>
   </div>
 </details>
 
